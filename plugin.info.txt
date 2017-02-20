@@ -1,0 +1,7 @@
+base   inetmodifications
+author i-net /// software
+email  tools@inetsoftware.de
+date   2017-02-13
+name   inetmodifications plugin
+desc   Modifications just for us.
+url    http://www.inetsoftware.de
