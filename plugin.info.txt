@@ -4,4 +4,4 @@ email  tools@inetsoftware.de
 date   2017-02-20
 name   Leightweight Script Plugin
 desc   Remove system scripts when not required, aka only admins need them
-url    http://www.inetsoftware.de
+url    https://github.com/i-net-software/dokuwiki-plugin-leightweightscript
