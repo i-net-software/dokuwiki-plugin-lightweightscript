@@ -1,7 +1,7 @@
-base   inetmodifications
+base   leightweightscript
 author i-net /// software
 email  tools@inetsoftware.de
 date   2017-02-20
-name   inetmodifications plugin
-desc   Modifications just for us.
+name   Leightweight Script Plugin
+desc   Remove system scripts when not required, aka only admins need them
 url    http://www.inetsoftware.de
