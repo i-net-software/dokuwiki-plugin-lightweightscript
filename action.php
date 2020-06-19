@@ -141,7 +141,7 @@ class action_plugin_leightweightscript extends DokuWiki_Action_Plugin {
     private function excludeFilter( $str, $list ) {
         return !$this->includeFilter( $str, $list );
     }
-    
+
     /**
      * Filters scripts that are intended for admins only
      *
@@ -170,12 +170,14 @@ class action_plugin_leightweightscript extends DokuWiki_Action_Plugin {
             '/lib/plugins/color/',
             '/lib/plugins/usermanager/',
             '/lib/plugins/edittable/',
-            '/lib/plugins/imagemapping/',
             '/lib/plugins/edittable/',
             '/lib/plugins/include/',
             '/lib/plugins/toctweak/',
+            '/lib/plugins/searchindex/',
             
         )) && $this->excludeFilter( $script, array(
+            '/lib/scripts/script.js', // a core script
+            '/lib/scripts/page.js', // a core script for footnotes
             'jquery.cookie.js',
         ));
     }
