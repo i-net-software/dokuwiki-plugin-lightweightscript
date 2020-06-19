@@ -1,6 +1,6 @@
 <?php
 /**
- * DokuWiki Plugin inetmodifications (Action Component)
+ * DokuWiki Plugin lightweightscript (Action Component)
  *
  * @license GPL 2 http://www.gnu.org/licenses/gpl-2.0.html
  * @author  i-net /// software <tools@inetsoftware.de>
@@ -9,7 +9,7 @@
 // must be run within Dokuwiki
 if(!defined('DOKU_INC')) die();
 
-class action_plugin_leightweightscript extends DokuWiki_Action_Plugin {
+class action_plugin_lightweightscript extends DokuWiki_Action_Plugin {
 
     /**
      * Registers a callback function for a given event
