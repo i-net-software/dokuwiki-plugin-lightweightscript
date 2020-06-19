@@ -2,6 +2,6 @@ base   lightweightscript
 author i-net /// software
 email  tools@inetsoftware.de
 date   2017-02-20
-name   Leightweight Script Plugin
+name   Lightweight Script Plugin
 desc   Remove system scripts when not required, aka only admins need them
 url    https://github.com/i-net-software/dokuwiki-plugin-lightweightscript
