@@ -35,13 +35,14 @@ class action_plugin_lightweightscript extends DokuWiki_Action_Plugin {
      */
     public function handle_tpl_metaheader_output(Doku_Event &$event, $param) {
         global $ID;
+        global $conf;
         
         // add script if user has better auth than AUTH_EDIT
         if ( auth_quickaclcheck( $ID ) >= AUTH_EDIT ) {
             $event->data['script'][] = array(
                 'type'=> 'text/javascript', 'charset'=> 'utf-8', '_data'=> '',
                 'src' => DOKU_BASE.'lib/exe/js.php'.'?t='.rawurlencode($conf['template']).'&type=admin&tseed='.$tseed
-            );
+            )  + ($conf['defer_js'] ? [ 'defer' => 'defer'] : []);
         }
         
         // The first one is the static JavaScript block. PageSpeed says it would be good to print this first.
