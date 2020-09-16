@@ -175,6 +175,7 @@ class action_plugin_lightweightscript extends DokuWiki_Action_Plugin {
             '/lib/plugins/include/',
             '/lib/plugins/toctweak/',
             '/lib/plugins/searchindex/',
+            '/lib/plugins/fastwiki/',
             
         )) && $this->excludeFilter( $script, array(
             '/lib/scripts/script.js', // a core script
